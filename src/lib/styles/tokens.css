@@ -1,0 +1,75 @@
+@theme {
+	--font-mono-heavy: 'Handjet', 'mono';
+	--font-mono: 'Fira Code', 'mono';
+
+	--color-accent-green: #b1dc50;
+
+	--color-green: #4af626;
+	--color-pink: #ff13f0;
+	--color-blue: #00f0ff;
+	--color-blue-deep: #1b2aa5;
+	--color-yellow: #ffff33;
+	--color-orange: #ff5e00;
+	--color-gray: #3b444b;
+}
+
+@utility heading-1 {
+	@apply font-mono-heavy text-8xl;
+}
+
+@utility heading-2 {
+	@apply font-mono-heavy text-6xl;
+}
+
+@utility heading-3 {
+	@apply font-mono text-3xl;
+}
+
+@utility body {
+	@apply font-mono text-base;
+}
+
+@utility narration {
+	@apply self-center font-mono text-base text-white;
+}
+
+@utility character-laurel {
+	@apply text-green self-start font-mono text-base;
+}
+
+@utility character-wren {
+	@apply text-blue self-end font-mono text-base;
+}
+
+@utility character-kai {
+	@apply text-pink self-end font-mono text-base;
+}
+
+@utility character-ben {
+	@apply text-yellow self-end font-mono text-base;
+}
+
+@utility character-clove {
+	@apply text-orange self-end font-mono text-base;
+}
+
+@utility script-format {
+	@apply mx-auto flex max-w-6xl flex-col gap-4;
+}
+
+@utility content-format {
+	@apply mx-auto flex max-w-lg justify-start;
+}
+
+@theme {
+	--animate-wiggle: wiggle 3s ease-in-out infinite;
+	@keyframes wiggle {
+		0%,
+		100% {
+			transform: rotate(-3deg);
+		}
+		50% {
+			transform: rotate(3deg);
+		}
+	}
+}

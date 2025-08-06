@@ -1,0 +1,52 @@
+img_alts:
+  subway: 'Anime subway train, credit: https://se.pinterest.com/pin/56998751528121788/'
+
+text:
+  sender: 'From: Jeremy'
+  time: '8:48 AM'
+  message: >
+    hey laurel, no need to come in today. execs just came by with a notice for emergency layoffs, on account of the great decay. or whatever the news is calling it.
+
+
+    it's not just you, half the department's been let go. sorry for the bad news.
+
+
+    ...do you want to talk about it over drinks later?
+
+text_2:
+  - sender: 'From: Laurel'
+    time: '8:48 AM'
+    message: >
+      sup dude
+  - sender: 'From: James'
+    time: '8:48 AM'
+    message: >
+      no dude
+
+
+      doesn't work like that
+  - sender: 'From: Laurel'
+    time: '8:48 AM'
+    message: >
+      sup dude
+  - sender: 'From: Laurel'
+    time: '8:48 AM'
+    message: >
+      sup dude
+  - sender: 'From: Laurel'
+    time: '8:48 AM'
+    message: >
+      sup dude
+
+dialogue_1:
+  - laurel: ahhh shit
+  - laurel: man
+
+dialogue_2:
+  - laurel: ahhh shit
+  - ben: it was bad huh
+  - kai: what's up dude?
+  - ben: shut up man
+  - wren: just got laid off. ha, sucks
+  - laurel: ahhh shit
+  - wren: man what?
