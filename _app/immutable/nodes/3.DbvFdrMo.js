@@ -1,4 +1,4 @@
-import"../chunks/DsnmJJEf.js";import"../chunks/aP4rGfXS.js";import{p as Bt,f as Mt,b as zt,c as It}from"../chunks/BywqXo3Q.js";import{p as Pt,i as Rt}from"../chunks/CQw3NmGw.js";var qt={hed:"welcome to somerville (hi)",about:`somerville is a very real city in ma, usa. it is also a real city in a world where ma and usa do not exist. 
+import"../chunks/DsnmJJEf.js";import"../chunks/aP4rGfXS.js";import{p as Bt,f as Mt,b as zt,c as It}from"../chunks/BywqXo3Q.js";import{p as Pt,i as Rt}from"../chunks/BiuRCfEO.js";var qt={hed:"welcome to somerville (hi)",about:`somerville is a very real city in ma, usa. it is also a real city in a world where ma and usa do not exist. 
 
 in this somerville, there is only glorious decay. there is only a fresh pond which is neither fresh nor a pond anymore, only a still, unbroken, rust-red surface.
 
