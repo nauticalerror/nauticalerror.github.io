@@ -13,3 +13,19 @@
 	font-display: swap;
 	src: url('/fonts/FiraCode.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: 'Nabla';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/Nabla.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'UnifrakturMaguntia';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/UnifrakturMaguntia.ttf') format('truetype');
+}
