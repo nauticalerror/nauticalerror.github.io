@@ -3,7 +3,6 @@
 	import Message from '$lib/components/Message.svelte';
 	import Dialogue from '$lib/components/Dialogue.svelte';
 	import Dither from '$lib/components/Dither.svelte';
-	import { base } from '$app/paths';
 	import { page } from '$app/state';
 	import md from '$lib/utils/md';
 
@@ -12,7 +11,7 @@
 </script>
 
 <Chapter>
-	<Dither src={base + '/assets/chapter-1/subway.gif'} alt={copy.img_alts.subway} />
+	<Dither src="/assets/chapter-1/subway.gif" alt={copy.img_alts.subway} />
 
 	<Message messages={copy.text} />
 

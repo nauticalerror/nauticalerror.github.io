@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Dither from '$lib/components/Dither.svelte';
-	import { base } from '$app/paths';
 	import { page } from '$app/state';
 	import md from '$lib/utils/md';
 
@@ -39,7 +38,7 @@
 <section class="mx-auto h-screen w-full">
 	<Dither>
 		<div class="flex h-screen w-full flex-col items-center justify-center">
-			<a href={base + '/chapter-1'}>
+			<a href="/chapter-1">
 				<img
 					src={base + '/assets/landing/tree.jpg'}
 					alt="tree"
@@ -55,7 +54,7 @@
 				{@html md(copy.hed)}
 			</h1>
 
-			<a href={base + '/about'}>
+			<a href="/about">
 				<p class="heading-3 hover:drop-shadow-accent-green text-white hover:drop-shadow-xl">
 					about
 				</p>
