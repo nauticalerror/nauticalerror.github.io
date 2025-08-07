@@ -29,3 +29,11 @@
 	font-display: swap;
 	src: url('/fonts/UnifrakturMaguntia.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: 'Pirata One';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/PirataOne.ttf') format('truetype');
+}

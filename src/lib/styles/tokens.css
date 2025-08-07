@@ -2,13 +2,19 @@
 	--font-mono-heavy: 'Handjet', 'mono';
 	--font-mono: 'Fira Code', 'mono';
 	--font-nabla: 'Nabla', 'mono';
-	--font-blackletter: 'UnifrakturMaguntia', 'mono';
+	--font-blackletter: 'UnifrakturMaguntia', 'serif';
+	--font-blackletter-soft: 'Pirata One', 'serif';
 
 	--color-accent-green: #b1dc50;
+	--color-accent-ocean: #027b8b;
 	--color-accent-blue: #1b2aa5;
 }
 
 /* heading-1 styled manually */
+
+@utility heading-2 {
+	@apply font-blackletter-soft text-3xl tracking-wider md:text-5xl;
+}
 
 @utility body {
 	@apply font-mono text-sm tracking-tighter md:text-base;

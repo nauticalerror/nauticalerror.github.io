@@ -18,4 +18,24 @@
 	a {
 		@apply decoration-accent-green hover:bg-accent-green underline decoration-2 underline-offset-2;
 	}
+
+	.broider {
+		border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAbJJREFUeF7t3LGOglAYRGHxna2srXxnNbHjmjiZcBSUs+29GeBj+Nndgul4vt4P/mACk6CY5TNIUNZTUNgzg94up4k+6C/npREZH3lB57dfUPhxEHRt0PERH+/I3kZAuv5x/WWGCvp+ZiYfQcNIsKEfnpmLGzqeX3rLwdezelx6Z9QzVND3f9gIWnbehpZgafvXQdMB0wlvbT291dMIjL82pQBB5/+gF3RojA2FZ4aggsICcJwNFRQWgONsqKCwABxnQwWFBeA4GyooLADH2VBBYQE4zoYKCgvAcTZUUFgAjrOhgsICcJwNFRQWgONsqKCwABxnQwWFBeA4GyooLADH2VBBYQE4zoYKCgvAcTZUUFgAjrOhgsICcJwNFRQWgONsqKCwABxnQwWFBeA4GyooLADH2VBBYQE4zoYKCgvAcTZUUFgAjlu9ofD1bC4ufQLEzwyVt0zQEixtFzQJles4aDuky/Pd/PZ0/fUMTYGbF1l4gun6BS2BBS3B0vbFoOMB0lBOJ/Rv6yPweH1+x76844KWYGm7oEmoXF8MWh5v99vjDN29UAkgaAmWtguahMr1B0F42s7pqG86AAAAAElFTkSuQmCC')
+			28 / 28px / 0 round;
+		border-width: 28px;
+		border-style: solid;
+	}
+
+	@font-palette-values --custom {
+		font-family: 'Nabla';
+		base-palette: 1;
+	}
+
+	.heading-1 {
+		font-family: 'Nabla', 'Fira Code', 'Courier New', Courier, monospace;
+		font-palette: --custom;
+		font-variation-settings:
+			'EDPT' 200,
+			'HLIT' 100;
+	}
 }

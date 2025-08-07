@@ -8,13 +8,13 @@
 	let radius = $derived(windowWidth >= 768 ? 300 : 100);
 
 	let images = [
-		{ label: 'media', src: '/assets/home/jaeger.png', href: '/' },
-		{ label: 'sports', src: '/assets/home/skate.png', href: '/' },
-		{ label: 'nature', src: '/assets/home/watermelon.png', href: '/' },
-		{ label: 'food', src: '/assets/home/indomie.png', href: '/' },
-		{ label: 'blog', src: '/assets/home/notebook.png', href: '/' },
-		{ label: 'home', src: '/assets/home/keys.png', href: '/' },
-		{ label: 'music', src: '/assets/home/walkman.png', href: '/' }
+		{ label: 'media', src: '/assets/landing/jaeger.png', href: '/' },
+		{ label: 'sports', src: '/assets/landing/skate.png', href: '/' },
+		{ label: 'nature', src: '/assets/landing/watermelon.png', href: '/' },
+		{ label: 'food', src: '/assets/landing/indomie.png', href: '/' },
+		{ label: 'blog', src: '/assets/landing/notebook.png', href: '/' },
+		{ label: 'home', src: '/assets/landing/keys.png', href: '/home' },
+		{ label: 'music', src: '/assets/landing/walkman.png', href: '/' }
 	];
 
 	onMount(() => {
@@ -39,27 +39,25 @@
 	}
 </script>
 
-<!-- style:rotate={`${Math.random() * 360}deg`}  -->
-
 <div class="relative {classes}">
 	{#each images as { label, src, href }, i (i)}
-		{@const position = getPosition(i, images.length, radius)}
+		{@const position = getPosition(i, images.length)}
 		<div
 			class={['orbit absolute inset-0 -translate-y-10 translate-x-10'].join(' ')}
-			style:animation-duration={`${Math.random() * 20 + 20}s`}
+			style:animation-duration={`${Math.random() * 20 + 30}s`}
 			style:scale={`${Math.random() * 0.8 + 1}`}
 			style:--radius={`${radius}px`}
 			style:--start-angle={`${position.angle}rad`}
 		>
 			<div class="group relative">
-				<a {href} class="relative block hover:bg-transparent">
+				<a {href} class="relative flex flex-col no-underline hover:bg-transparent">
 					<img
 						{src}
 						alt={label}
 						class="group-hover:rotate-10 transition-transform duration-300 ease-in-out group-hover:scale-110"
 					/>
 					<p
-						class="bg-accent-blue pointer-events-auto absolute inset-[-1] flex h-fit w-fit items-center justify-center text-center font-mono text-sm text-white drop-shadow"
+						class="bg-accent-blue pointer-events-auto flex h-fit w-fit items-center justify-center text-center font-mono text-xs text-white drop-shadow md:text-sm"
 					>
 						{label}
 					</p>

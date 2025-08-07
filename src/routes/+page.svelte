@@ -42,8 +42,8 @@
 						<p>
 							it's also a playground for me to exercise my coding and design muscles. everything you
 							see here is hand-coded with sveltekit, (mostly) styled with tailwind, and deployed
-							using github pages, which are all free, accessible, and easy-ish to learn (emphasis on
-							ish. there's tons of documentation out there! which is both awesome and sometimes
+							using github pages, all of which are free, accessible, and easy-ish to learn (emphasis
+							on ish. there's tons of documentation out there! which is both awesome and sometimes
 							frustrating....)
 						</p>
 
@@ -88,22 +88,9 @@
 </section>
 
 <style>
-	@font-palette-values --custom {
-		font-family: 'Nabla';
-		base-palette: 1;
-	}
-
-	.heading-1 {
-		font-family: 'Nabla', 'Fira Code', 'Courier New', Courier, monospace;
-		font-palette: --custom;
-		font-variation-settings:
-			'EDPT' 200,
-			'HLIT' 100;
-	}
-
 	.background {
 		background-color: var(--color-accent-green);
-		background-image: url('/assets/home/noise.jpg');
+		background-image: url('/assets/landing/noise.jpg');
 		background-blend-mode: overlay; /* difference or overlay */
 		background-size: cover;
 		background-repeat: no-repeat;
