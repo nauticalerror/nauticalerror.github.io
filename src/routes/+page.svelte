@@ -6,27 +6,19 @@
 	class="background relative flex h-screen w-full items-center justify-center overflow-hidden"
 >
 	<div class="pointer-events-auto absolute">
-		<!-- <div class="" style:inset={`${-5 * 100}%`}>
-			<div
-				class="absolute inset-0 flex animate-[spin_linear_infinite] items-center justify-center"
-				style:animation-duration={`${Math.random() * 100 + 30}s`}
-				style:rotate={`${Math.random() * 360}deg`}
-			>
-				<div class="sm:inset-50 absolute inset-20" style:scale={Math.random() * 0.3 + 0.7}> -->
-		<FloatingIcons spin class="rotate-20 w-20" />
-		<!-- </div>
-			</div>
-		</div> -->
+		<FloatingIcons class="w-10 md:w-20" />
 	</div>
 	<div
 		class="pointer-events-none relative flex flex-col items-center justify-center gap-4 px-8 py-24"
 	>
 		<h1 class="heading-1 text-5xl sm:text-7xl">nautical error</h1>
-		<div class="window border-3 pointer-events-auto my-8 w-full max-w-md border-white bg-white">
-			<details class="max-h-[60vh] overflow-scroll">
+		<div
+			class="window drop-shadow-accent-blue pointer-events-auto my-8 w-full max-w-md border-4 border-gray-200 bg-white drop-shadow-xl"
+		>
+			<details class="max-h-[60vh] overflow-auto">
 				<summary class="cursor-pointer list-none">
 					<div class="relative w-full">
-						<div class="bg-blue-deep sticky top-0 h-6 w-full">
+						<div class="bg-accent-blue top-0 h-6 w-full">
 							<div
 								class="window border-gray text-gray absolute right-2 top-1/2 flex h-3 w-3 -translate-y-1/2 transform items-center justify-center border bg-white pb-[1px] text-xs leading-none"
 							>
@@ -35,12 +27,13 @@
 						</div>
 					</div>
 					<div class="text-gray flex justify-between px-4 py-2">
-						<div class="window-title">welcome!</div>
+						<div class="window-title">about me</div>
 					</div>
 				</summary>
 
 				<div class="px-4 py-2">
 					<div class="body flex flex-col gap-4 text-black">
+						<p>hello! welcome to my corner of the internet!</p>
 						<p>
 							i'm flo. i created this site as a scrapbook to host and share bits of internet things
 							i find interesting——music, links, blogs, thoughts, recipes, art, videos, and other
@@ -62,13 +55,15 @@
 								> in indonesia
 							</li>
 							<li>
-								i enjoy playing sports and being outside! these days i mainly practice parkour, but
+								i enjoy playing sports and being outside. these days i mainly practice parkour, but
 								i also enjoy doing aerials/circus, bouldering, rowing, swimming, and hiking
 							</li>
 							<li>
 								i've been in fandom spaces for quite a long time. followed the gay migration from
-								tumblr to twitter to discord to dreamwidth and now to the neocities-style web
-								revival
+								tumblr to twitter to discord to dreamwidth and now to the neocities-style <a
+									href="https://thoughts.melonking.net/guides/introduction-to-the-web-revival-1-what-is-the-web-revival"
+									>web revival</a
+								>
 							</li>
 						</ul>
 						<p>
@@ -83,7 +78,7 @@
 							</li>
 							<li>media gallery</li>
 							<li>need to figure out if i can emulate a webring</li>
-							<li>a blog/feed of some kind? idk. will probably use <code>mdsvex</code> if i do</li>
+							<li>a blog of some kind? idk. will probably use <code>mdsvex</code> if i do</li>
 						</ul>
 					</div>
 				</div>
@@ -99,7 +94,7 @@
 	}
 
 	.heading-1 {
-		font-family: 'Nabla', sans-serif;
+		font-family: 'Nabla', 'Fira Code', 'Courier New', Courier, monospace;
 		font-palette: --custom;
 		font-variation-settings:
 			'EDPT' 200,
@@ -117,6 +112,13 @@
 
 	.window {
 		border-style: outset;
+	}
+
+	summary::-webkit-details-marker {
+		display: none;
+	}
+	summary::marker {
+		display: none;
 	}
 
 	.list li {

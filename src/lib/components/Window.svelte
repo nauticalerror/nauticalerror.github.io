@@ -14,7 +14,7 @@
 <div class={['window border-3 my-8 w-full max-w-md border-white bg-white', classes]}>
 	{#if !collapsible}
 		<div class="relative w-full">
-			<div class="bg-blue-deep relative h-6 w-full">
+			<div class="bg-accent-blue relative h-6 w-full">
 				<div
 					class="window border-gray text-gray absolute right-2 top-1/2 flex h-3 w-3 -translate-y-1/2 transform items-center justify-center border bg-white pb-[1px] text-xs leading-none"
 				>
@@ -33,7 +33,7 @@
 		<details {open}>
 			<summary class="cursor-pointer list-none">
 				<div class="relative w-full">
-					<div class="bg-blue-deep relative h-6 w-full">
+					<div class="bg-accent-blue relative h-6 w-full">
 						<div
 							class="window border-gray text-gray absolute right-2 top-1/2 flex h-3 w-3 -translate-y-1/2 transform items-center justify-center border bg-white pb-[1px] text-xs leading-none"
 						>
@@ -52,7 +52,7 @@
 		</details>
 	{:else}
 		<div class="relative w-full">
-			<div class="bg-blue-deep relative h-6 w-full">
+			<div class="bg-accent-blue relative h-6 w-full">
 				<div
 					class="window border-gray text-gray absolute right-2 top-1/2 flex h-3 w-3 -translate-y-1/2 transform items-center justify-center border bg-white pb-[1px] text-xs leading-none"
 				>

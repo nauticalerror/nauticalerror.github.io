@@ -16,7 +16,6 @@
 	}
 
 	a {
-		@apply decoration-accent-green hover:bg-accent-green underline;
-		text-underline-offset: 2px;
+		@apply decoration-accent-green hover:bg-accent-green underline decoration-2 underline-offset-2;
 	}
 }

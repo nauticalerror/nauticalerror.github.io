@@ -5,20 +5,15 @@
 	--font-blackletter: 'UnifrakturMaguntia', 'mono';
 
 	--color-accent-green: #b1dc50;
-
-	--color-blue-deep: #1b2aa5;
+	--color-accent-blue: #1b2aa5;
 }
 
 /* heading-1 styled manually */
 
 @utility body {
-	@apply font-mono text-base tracking-tighter;
+	@apply font-mono text-sm tracking-tighter md:text-base;
 }
 
 @utility window-title {
-	@apply font-blackletter text-3xl;
-}
-
-@utility content-format {
-	@apply mx-auto flex max-w-lg justify-start;
+	@apply font-blackletter text-2xl md:text-3xl;
 }
